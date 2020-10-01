@@ -11,7 +11,8 @@ from glob import glob
 from unittest import mock
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 
 def test_safe(func):
